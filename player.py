@@ -1,6 +1,7 @@
 import pygame
 import app  # Contains global settings like WIDTH, HEIGHT, PLAYER_SPEED, etc.
 
+# another comment
 class Player:
     def __init__(self, x, y, assets):
         """Initialize the player with position and image assets."""
