@@ -9,20 +9,28 @@ class Game:
     def __init__(self):
         pygame.init()  # Initialize Pygame
 
-        # TODO: Create a game window using Pygame
-        # self.screen = ?
+        
+        self.screen = pygame.display.set_mode((app.WIDTH, app.HEIGHT))
+        pygame.display.set_caption("Tom shooter game")
 
-        # TODO: Set up the game clock for frame rate control
-        # self.clock = ?
+        self.clock = pygame.time.Clock()
 
-        # TODO: Load assets (e.g., fonts, images)
-        # self.font_small = ?
+
+        self.assets = app.load_assets()
+        font_path = os.path.join("assets", "PressStart2P.ttf")
+        self.font_small = pygame.font.Font(font_path, 18)
+        self.font_large = pygame.font.Font(font_path, 32)
+        
 
         # TODO: Set up game state variables
-        # self.running = True
+        self. running = True
+        self-game_over = False
+        self. reset_game ()
 
-        # TODO: Create a random background
-        # self.background = ?
+       
+        self.background = self.create_random_background(
+        app.WIDTH, app.HEIGHT, self.assets["floor_tiles"]
+        )
         
     def reset_game(self):
         self.game_over = False
