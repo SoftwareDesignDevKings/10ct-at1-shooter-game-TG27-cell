@@ -2,8 +2,8 @@
 from game import Game
 from player import Player
 
-# first comment by baraam
-# second comment 
+# commit after all the copying and pasting check
+
 def main():
     game = Game()
     game.run()

@@ -80,4 +80,20 @@ def load_assets():
     # Example coin image (uncomment if you have coin frames / images)
     # assets["coin"] = pygame.image.load(os.path.join("assets", "coin.png")).convert_alpha()
 
+    assets["powerups"] = {
+        "health": pygame.image.load(os.path.join("assets", "Health.png")).convert_alpha(),
+        "speed": pygame.image.load(os.path.join("assets", "Speed.png")).convert_alpha(),
+        "shield": pygame.image.load(os.path.join("assets", "Shield.png")).convert_alpha(),
+    }
+
+    assets["sounds"] = {
+        "background_music": pygame.mixer.music.load(os.path.join("assets", "Background Music.wav")),
+        "level_up": pygame.mixer.Sound(os.path.join("assets", "Level up.wav")),
+        "player_damage": pygame.mixer.Sound(os.path.join("assets", "Player Damage.wav")),
+        "enemy_death": pygame.mixer.Sound(os.path.join("assets", "Enemy Death.wav")),
+        "bullet_sound": pygame.mixer.Sound(os.path.join("assets", "Bullet Sound.wav")),
+    }    
+
     return assets
+
+
