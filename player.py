@@ -24,8 +24,8 @@ class Player:
 
         self.xp = 0
 
-        self.health = 5  # Or whatever your starting health is
-        self.max_health = 5  # Add this line
+        self.health = 5 
+        self.max_health = 5
         self.shield_timer = 0
 
 

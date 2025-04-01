@@ -20,8 +20,8 @@ class Game:
         self.powerup_spawn_timer = 0
         self.powerup_spawn_interval = 300
 
-        self.assets = app.load_assets()  # ✅ Load assets first
-        self.player = Player(x=100, y=200, assets=self.assets)  # ✅ Now self.assets is defined
+        self.assets = app.load_assets() 
+        self.player = Player(x=100, y=200, assets=self.assets)  
 
 
 
